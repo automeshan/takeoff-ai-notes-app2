@@ -10,7 +10,6 @@ export const Providers = ({ children, ...props }: ThemeProviderProps) => {
 	return (
 		<NextThemesProvider {...props}>
 			{" "}
-			{/* Wrap children with theme provider */}
 			<TooltipProvider>{children}</TooltipProvider> {/* Add tooltip context */}
 		</NextThemesProvider>
 	);
